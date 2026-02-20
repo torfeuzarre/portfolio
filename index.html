@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="fr" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Benjamin Wolff — Applications iOS</title>
+  <meta name="description" content="Découvrez les applications iOS développées par Benjamin Wolff." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: { sans: ['Inter', 'sans-serif'] },
+          colors: {
+            gray: {
+              950: '#0a0a0f',
+            }
+          }
+        }
+      }
+    }
+  </script>
+  <style>
+    body { font-family: 'Inter', sans-serif; }
+    .gradient-text {
+      background: linear-gradient(135deg, #3b82f6, #8b5cf6);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+    }
+    .gradient-border {
+      background: linear-gradient(135deg, #3b82f6, #8b5cf6);
+      padding: 1px;
+      border-radius: 16px;
+    }
+    .app-card-inner {
+      background: #111118;
+      border-radius: 15px;
+    }
+    .badge-appstore {
+      background: #000;
+      border: 1px solid #333;
+      border-radius: 10px;
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      padding: 8px 16px;
+      transition: opacity 0.2s;
+    }
+    .badge-appstore:hover { opacity: 0.8; }
+  </style>
+</head>
+<body class="bg-[#0a0a0f] text-gray-100 antialiased">
+
+  <!-- Navigation -->
+  <nav class="sticky top-0 z-50 border-b border-white/5 backdrop-blur-xl bg-[#0a0a0f]/80">
+    <div class="max-w-5xl mx-auto px-6 flex items-center justify-between h-16">
+      <a href="index.html" class="font-semibold text-white tracking-tight">Benjamin Wolff</a>
+      <a href="support.html" class="text-sm text-gray-400 hover:text-white transition-colors">Support</a>
+    </div>
+  </nav>
+
+  <!-- Hero -->
+  <section class="max-w-5xl mx-auto px-6 pt-24 pb-20 text-center">
+    <p class="text-sm font-medium text-blue-400 tracking-widest uppercase mb-4">Développeur iOS Indépendant</p>
+    <h1 class="text-4xl sm:text-5xl md:text-6xl font-extrabold leading-tight mb-6">
+      Mes Applications
+      <span class="gradient-text"> iOS</span>
+    </h1>
+    <p class="text-gray-400 text-lg sm:text-xl max-w-xl mx-auto leading-relaxed">
+      Des outils simples et efficaces pensés pour le quotidien, disponibles sur l'App Store.
+    </p>
+  </section>
+
+  <!-- Apps Grid -->
+  <section class="max-w-5xl mx-auto px-6 pb-32">
+    <h2 class="text-xs font-semibold tracking-widest uppercase text-gray-500 mb-8">Applications disponibles</h2>
+
+    <div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
+
+      <!-- Card: Running Speed Calculator -->
+      <div class="gradient-border">
+        <div class="app-card-inner p-6 flex flex-col gap-5 h-full">
+          <!-- App Icon placeholder -->
+          <div class="w-16 h-16 rounded-2xl bg-gradient-to-br from-blue-500 to-violet-600 flex items-center justify-center flex-shrink-0">
+            <svg xmlns="http://www.w3.org/2000/svg" class="w-8 h-8 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.8">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M13 10V3L4 14h7v7l9-11h-7z" />
+            </svg>
+          </div>
+
+          <!-- Info -->
+          <div class="flex-1">
+            <div class="flex items-start justify-between gap-3 mb-2">
+              <h3 class="text-lg font-semibold text-white">Running Speed Calculator</h3>
+              <span class="flex-shrink-0 text-xs font-medium text-gray-500 bg-white/5 border border-white/10 rounded-full px-2.5 py-1">Gratuit</span>
+            </div>
+            <p class="text-sm text-gray-400 leading-relaxed mb-4">
+              Calculez instantanément votre vitesse, allure, distance ou temps de course.
+              Idéal pour les coureurs qui veulent optimiser leur entraînement.
+            </p>
+            <!-- Pro features -->
+            <div class="border border-violet-500/25 bg-violet-950/20 rounded-xl p-3.5">
+              <div class="flex items-center justify-between gap-2 mb-2.5">
+                <span class="text-xs font-semibold text-violet-300 tracking-wide uppercase">Pro — 2,99 €</span>
+                <span class="text-xs text-violet-400/70">Achat unique</span>
+              </div>
+              <ul class="space-y-1.5">
+                <li class="flex items-center gap-2 text-xs text-gray-400">
+                  <svg class="w-3.5 h-3.5 text-violet-400 flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5"><path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7"/></svg>
+                  Prédictions de performance
+                </li>
+                <li class="flex items-center gap-2 text-xs text-gray-400">
+                  <svg class="w-3.5 h-3.5 text-violet-400 flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5"><path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7"/></svg>
+                  Historique illimité
+                </li>
+                <li class="flex items-center gap-2 text-xs text-gray-400">
+                  <svg class="w-3.5 h-3.5 text-violet-400 flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5"><path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7"/></svg>
+                  Fonctionnalités à venir incluses
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <!-- Actions -->
+          <div class="flex flex-wrap items-center gap-3 mt-auto">
+            <!-- App Store Badge -->
+            <a href="https://apps.apple.com/ga/app/running-speed-calculator/id6445966765" class="badge-appstore" aria-label="Télécharger sur l'App Store" target="_blank" rel="noopener">
+              <svg class="w-5 h-5 text-white" viewBox="0 0 814 1000" fill="currentColor">
+                <path d="M788.1 340.9c-5.8 4.5-108.2 62.2-108.2 190.5 0 148.4 130.3 200.9 134.2 202.2-.6 3.2-20.7 71.9-68.7 141.9-42.8 61.6-87.5 123.1-155.5 123.1s-85.5-39.5-164-39.5c-76 0-103.7 40.8-165.9 40.8s-105-57.8-155.5-127.4C46 790.9 0 663.7 0 541.8 0 285.7 168.3 155.8 334.1 155.8c62 0 113.9 40.8 154.9 40.8s100.4-43 171.9-43c29.5 0 131.9 1.3 199.1 87.5zm-199.1-103.6c-33.2 0-80.1 22.1-108.5 61.1-25.1 34.5-44.9 87.5-44.9 140.1 0 7.1 1.3 14.3 1.9 16.5 3.2.6 8.4 1.3 13.6 1.3 29.5 0 71.9-19.5 100.4-55.2 31.5-39.5 50.2-90.4 50.2-140.6 0-6.5-.6-13-1.3-23.2z"/>
+              </svg>
+              <span class="text-white text-sm font-medium">App Store</span>
+            </a>
+
+            <a href="support.html" class="text-sm text-blue-400 hover:text-blue-300 transition-colors font-medium">
+              Support →
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Placeholder card pour futures apps -->
+      <div class="border border-dashed border-white/10 rounded-2xl p-6 flex flex-col items-center justify-center text-center gap-3 opacity-40 select-none">
+        <div class="w-12 h-12 rounded-xl bg-white/5 flex items-center justify-center">
+          <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6 text-gray-500" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.5">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M12 4v16m8-8H4" />
+          </svg>
+        </div>
+        <p class="text-sm text-gray-500">Prochainement</p>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="border-t border-white/5">
+    <div class="max-w-5xl mx-auto px-6 py-10 flex flex-col sm:flex-row items-center justify-between gap-4 text-sm text-gray-500">
+      <p>© 2026 Benjamin Wolff</p>
+      <nav class="flex gap-6">
+        <a href="#" class="hover:text-gray-300 transition-colors">Confidentialité</a>
+        <a href="support.html" class="hover:text-gray-300 transition-colors">Support</a>
+      </nav>
+    </div>
+  </footer>
+
+</body>
+</html>
