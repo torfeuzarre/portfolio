@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contact — Benjamin Wolff</title>
+  <meta
+    name="description"
+    content="Formulaire de contact pour les applications iPhone de Benjamin Wolff avec choix de l'application concernée."
+  />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Space+Grotesk:wght@500;700&display=swap"
+    rel="stylesheet"
+  />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body class="theme-contact">
+  <header class="site-header">
+    <div class="container topbar">
+      <a href="index.html" class="brand" aria-label="Retour à l'accueil">
+        <span class="brand-mark">BW</span>
+        <span>Benjamin Wolff</span>
+      </a>
+      <nav class="header-nav" aria-label="Navigation principale">
+        <a href="index.html" class="nav-link">Accueil</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="container compact-hero">
+      <div class="section-head animate-rise">
+        <div>
+          <div class="section-label">Contact</div>
+          <h1 class="section-title">Un formulaire unique, avec choix de l'application.</h1>
+          <p class="section-copy">
+            Le message est préparé avec le contexte de l'application sélectionnée. L'envoi se fait ensuite
+            via le client mail de l'appareil à l'adresse <a href="mailto:support.benjaminwolff@pm.me" class="accent-text">support.benjaminwolff@pm.me</a>.
+          </p>
+        </div>
+      </div>
+
+      <div class="contact-layout">
+        <aside class="contact-side animate-rise delay-1">
+          <article class="contact-side-card">
+            <div class="small-label">Applications</div>
+            <h3>Choisir le bon produit</h3>
+            <p>Le formulaire permet de préciser si la demande concerne Running Speed Calculator, RemplApp ou le portfolio en général.</p>
+          </article>
+          <article class="contact-side-card">
+            <div class="small-label">Réponse</div>
+            <h3>Réponse habituelle</h3>
+            <p>Le délai cible reste d'environ 48 heures ouvrées selon la nature de la demande.</p>
+          </article>
+          <article class="contact-side-card">
+            <div class="small-label">Conseil</div>
+            <h3>Être précis</h3>
+            <p>Si le message concerne un bug, indiquez l'app, la version d'iOS et ce qui permet de reproduire le problème.</p>
+          </article>
+        </aside>
+
+        <section class="contact-form animate-rise delay-2" aria-labelledby="contact-form-title">
+          <div class="contact-form-header">
+            <div class="small-label">Formulaire</div>
+            <h2 id="contact-form-title">Préparer un message</h2>
+            <p class="rich-copy">
+              Les liens depuis les pages des apps préselectionnent automatiquement l'application concernée.
+            </p>
+          </div>
+
+          <form id="contact-form">
+            <div class="form-grid">
+              <div class="form-field">
+                <label for="name">Nom</label>
+                <input id="name" name="name" type="text" required />
+              </div>
+
+              <div class="form-field">
+                <label for="email">Email</label>
+                <input id="email" name="email" type="email" required />
+              </div>
+
+              <div class="form-field form-field--full">
+                <label for="app">Application concernée</label>
+                <select id="app" name="app" required>
+                  <option value="general">Portfolio / demande générale</option>
+                  <option value="running-speed-calculator">Running Speed Calculator</option>
+                  <option value="remplapp">RemplApp</option>
+                </select>
+              </div>
+
+              <div class="form-field form-field--full">
+                <label for="subject">Sujet</label>
+                <input id="subject" name="subject" type="text" required />
+              </div>
+
+              <div class="form-field form-field--full">
+                <label for="message">Message</label>
+                <textarea id="message" name="message" required></textarea>
+              </div>
+            </div>
+
+            <div class="app-actions">
+              <button type="submit" class="button button-primary">Ouvrir l'email</button>
+              <a href="index.html" class="button button-secondary">Retour à l'accueil</a>
+            </div>
+          </form>
+
+          <p class="form-note">
+            Si aucun client mail n'est configuré sur l'appareil, vous pouvez écrire directement à
+            <a href="mailto:support.benjaminwolff@pm.me" class="accent-text">support.benjaminwolff@pm.me</a>.
+          </p>
+        </section>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer-inner">
+      <p>© 2026 Benjamin Wolff</p>
+      <nav class="footer-nav" aria-label="Navigation secondaire">
+        <a href="running-speed-calculator.html">Running Speed Calculator</a>
+        <a href="remplapp.html">RemplApp</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+    </div>
+  </footer>
+
+  <script src="contact.js"></script>
+</body>
+</html>
