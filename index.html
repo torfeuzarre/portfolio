@@ -3,27 +3,18 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Benjamin Wolff Apps — Applications iPhone</title>
-  <meta
-    name="description"
-    content="Applications iPhone développées par Benjamin Wolff."
-  />
+  <title>Benjamin Wolff — Applications iPhone</title>
+  <meta name="description" content="Applications iPhone développées par Benjamin Wolff." />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link
-    href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Space+Grotesk:wght@500;700&display=swap"
-    rel="stylesheet"
-  />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="styles.css" />
 </head>
-<body class="theme-home">
+<body>
   <header class="site-header">
     <div class="container topbar">
-      <a href="index.html" class="brand" aria-label="Accueil Benjamin Wolff Apps">
-        <span class="brand-mark">BW</span>
-        <span>Benjamin Wolff Apps</span>
-      </a>
-      <nav class="header-nav" aria-label="Navigation principale">
+      <a href="index.html" class="brand">Benjamin Wolff</a>
+      <nav class="header-nav">
         <a href="contact.html" class="nav-link">Contact</a>
       </nav>
     </div>
@@ -32,67 +23,51 @@
   <main>
     <section class="container compact-hero">
       <div class="animate-rise">
-        <div class="eyebrow">Benjamin Wolff Apps</div>
+        <p class="eyebrow">Portfolio</p>
         <h1 class="hero-title">Applications iPhone</h1>
         <p class="hero-copy">
-          Deux applications, deux pages dédiées. Chaque fiche regroupe la présentation du produit,
-          la confidentialité et le support.
+          Deux applications iOS. Chaque page regroupe la présentation, la politique de confidentialité et le support.
         </p>
       </div>
     </section>
 
-    <section class="container section" id="applications">
-      <div class="section-head animate-rise">
-        <div>
-          <div class="section-label">Applications</div>
-          <h2 class="section-title">Produits</h2>
-        </div>
-      </div>
-
+    <section class="container section">
       <div class="app-grid">
-        <article class="app-card app-card--running animate-rise delay-1">
+        <article class="app-card animate-rise delay-1">
           <div class="card-top">
-            <div class="icon-badge icon-badge--running logo-placeholder" aria-hidden="true">
-              <div>
-                RSC
-                <small>logo</small>
-              </div>
+            <div class="app-icon">
+              <img src="icones app/RemplApp.png" alt="Icône RemplApp" />
             </div>
           </div>
-          <h3 class="app-title">Running Speed Calculator</h3>
-          <p class="app-tagline">
-            Application de calcul pour convertir allure, vitesse, distance et temps de course.
-          </p>
-          <div class="app-actions">
-            <a href="running-speed-calculator.html" class="button button-primary">Voir la page</a>
-            <a
-              href="https://apps.apple.com/ga/app/running-speed-calculator/id6445966765"
-              class="button button-secondary"
-              target="_blank"
-              rel="noopener"
-            >
-              App Store
-            </a>
+          <div class="card-body">
+            <h3 class="app-title">RemplApp</h3>
+            <p class="app-tagline">
+              Fini les tableurs, fini les oublis. L'outil indispensable pour les médecins remplaçants
+              qui veulent tenir leur comptabilité simplement.
+            </p>
+            <div class="app-actions">
+              <a href="remplapp.html" class="button button-primary">Voir la page</a>
+              <a href="contact.html?app=remplapp" class="button button-secondary">Contact</a>
+            </div>
           </div>
         </article>
 
-        <article class="app-card app-card--remplapp animate-rise delay-2">
+        <article class="app-card animate-rise delay-2">
           <div class="card-top">
-            <div class="icon-badge icon-badge--remplapp logo-placeholder" aria-hidden="true">
-              <div>
-                RA
-                <small>logo</small>
-              </div>
+            <div class="app-icon">
+              <img src="icones app/Running Calculator.png" alt="Icône Running Speed Calculator" />
             </div>
           </div>
-          <h3 class="app-title">RemplApp</h3>
-          <p class="app-tagline">
-            Application iPhone pour les médecins remplaçants, avec suivi des remplacements, paiements
-            attendus et rétrocessions.
-          </p>
-          <div class="app-actions">
-            <a href="remplapp.html" class="button button-primary">Voir la page</a>
-            <a href="contact.html?app=remplapp" class="button button-secondary">Contacter</a>
+          <div class="card-body">
+            <h3 class="app-title">Running Speed Calculator</h3>
+            <p class="app-tagline">
+              Votre prochain record personnel commence ici. Calculez l'allure nécessaire
+              et obtenez une feuille de route précise pour chaque kilomètre.
+            </p>
+            <div class="app-actions">
+              <a href="running-speed-calculator.html" class="button button-primary">Voir la page</a>
+              <a href="https://apps.apple.com/ga/app/running-speed-calculator/id6445966765" class="button button-secondary" target="_blank" rel="noopener">App Store</a>
+            </div>
           </div>
         </article>
       </div>
@@ -101,10 +76,10 @@
 
   <footer class="footer">
     <div class="container footer-inner">
-      <p>© 2026 Benjamin Wolff Apps</p>
-      <nav class="footer-nav" aria-label="Navigation secondaire">
-        <a href="running-speed-calculator.html">Running Speed Calculator</a>
+      <p>&copy; 2026 Benjamin Wolff</p>
+      <nav class="footer-nav">
         <a href="remplapp.html">RemplApp</a>
+        <a href="running-speed-calculator.html">Running Speed Calculator</a>
         <a href="contact.html">Contact</a>
       </nav>
     </div>

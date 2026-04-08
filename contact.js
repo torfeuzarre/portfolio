@@ -1,5 +1,5 @@
 const appLabels = {
-  general: "Portfolio / demande générale",
+  general: "Demande générale",
   "running-speed-calculator": "Running Speed Calculator",
   remplapp: "RemplApp",
 };
